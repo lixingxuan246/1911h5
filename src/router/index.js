@@ -5,6 +5,7 @@ import Cate from '@/components/Index/Cate'
 import News from '@/components/Index/News'
 import Search from '@/components/Index/Search'
 import Full from '@/components/Index/Full'
+import One from '@/components/Index/One'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +30,10 @@ export default new Router({
       path: '/Full' ,
       name: 'Full',
       component: Full
+    },{
+      path: '/One' ,
+      name: 'One',
+      component: One
     }
   ]
 })
