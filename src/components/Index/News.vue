@@ -75,27 +75,27 @@
 
                 <li class="active">
                   <span class="wsmenu-click"></span>
-                  <a href="index.html">Home</a>
+                  <route-lick @click="ieji()">Home</route-lick>
                 </li>
                 <li>
                   <span class="wsmenu-click"></span>
-                  <a href="category.html">Policy</a>
+                  <route-lick @click="keji()">Policy</route-lick>
                 </li>
                 <li>
                   <span class="wsmenu-click"></span>
-                  <a href="category.html">Sport</a>
+                  <route-lick @click="jeji()">Sport</route-lick>
                 </li>
                 <li>
                   <span class="wsmenu-click"></span>
-                  <a href="category.html">Holidays</a>
+                  <route-lick @click="heji()">Holidays</route-lick>
                 </li>
                 <li>
                   <span class="wsmenu-click"></span>
-                  <a href="category.html">Religion</a>
+                  <route-lick @click="reji()">Religion</route-lick>
                 </li>
                 <li>
                   <span class="wsmenu-click"></span>
-                  <a href="category.html">People</a>
+                  <route-lick @click="peji()">People</route-lick>
                 </li>
                 <li>
                   <span class="wsmenu-click"></span>
@@ -389,6 +389,24 @@
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    methods: {
+      keji: function () {
+        // 通过路由跳转的方式实现页面跳转
+        this.$router.push({name: 'Cate'})
+      },
+      jeji: function () {
+        this.$router.push({name: 'Full'})
+      },
+      heji: function () {
+        this.$router.push({name: 'News'})
+      },
+      reji: function () {
+        this.$router.push({name: 'Search'})
+      },
+      ieji: function () {
+        this.$router.push({name: 'Index'})
       }
     }
   }
